@@ -1,0 +1,13 @@
+<div>
+    {{#if loggedIn}}
+    <p class="welcome">Welcome, {{userName}}!</p>
+    {{else}}
+    <p class="welcome">Welcome! Please login or sign up to post or comment.</p>
+    {{/if}}
+</div>
+
+<div class="post-list">
+    {{#each posts as |post|}}
+    {{> postData post }}
+    {{/each}}
+</div>
