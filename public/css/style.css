@@ -3,12 +3,12 @@
 }
 
 body {
-    background-color: var(--oldBlack);
+    background-color: black;
 
 }
 
 html {
-    background-color: var(--oldBlack);
+    background-color: rgb(67, 8, 145);
 }
 
 #navbar {
