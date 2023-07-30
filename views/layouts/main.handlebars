@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.0.2/css/pico.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header id="hero">
+        <h1 class="title"><a href="/">Tech Blog for Tech Bros</a></h1>
+        <nav id="navbar">
+            <ul id="navlist">
+                {{#if loggedIn}}
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/dashboard/">My Dashboard</a></li>
+                <li><a href="#" id="logout-btn">Logout</a></li>
+                {{else}}
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/dashboard/">My Dashboard</a></li>
+                <li><a href="/login">Login</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            {{{ body }}}
+        </div>
+    </main>
+</body>
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
+
+</html>
