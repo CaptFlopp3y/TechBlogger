@@ -26,8 +26,5 @@
     "express-handlebars": "^7.1.0",
     "express-session": "^1.17.3",
     "mysql2": "^3.5.2"
-  },
-  "engines": {
-    "node": "16.8.10"
   }
 }
